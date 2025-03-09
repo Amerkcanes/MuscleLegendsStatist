@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muscle Legends Stats</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <div class="menu-button" onclick="toggleMenu()">☰</div>
+    <div class="menu" id="menu">
+        <h3>Menu</h3>
+        <ul>
+            <li onclick="loadTop('strength')">Top Strength</li>
+            <li onclick="loadTop('durability')">Top Durability</li>
+            <li onclick="loadTop('speed')">Top Speed</li>
+            <li onclick="loadTop('good_karma')">Top Good Karma</li>
+            <li onclick="loadTop('bad_karma')">Top Bad Karma</li>
+            <li onclick="loadTop('kills')">Top Kills</li>
+            <li onclick="loadTop('rebirths')">Top Rebirths</li>
+            <li onclick="loadTop('pets')">Top Pets</li>
+        </ul>
+    </div>
+    
+    <div class="search-bar">
+        <input type="text" id="nickname" placeholder="Enter player nickname">
+        <button onclick="searchPlayer()">Search</button>
+    </div>
+    
+    <div id="player-info"></div>
+    <div id="top-players"></div>
+
+    <script src="Script.JS"></script>
+</body>
+</html>
